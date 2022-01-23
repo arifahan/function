@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event management company</title>
+</head>
+<body>
+    <h1 >Explore Event Management company</h1>
+    <button >Click Me-0</button>
+    <button id="btn-cocor">Click Me-1</button>
+    <button >Click Me-2</button>
+    <button id="last-btn">Click Me-3</button>
+</body>
+
+<script>
+    document.getElementById('last-btn').addEventListener('click', function(){
+        document.body.style.backgroundColor = 'blue';
+    })
+     function bgColor(){
+          document.body.style.backgroundColor = 'red';
+}    
+     function fontColor(){
+          document.body.style.color = 'blue';
+}    
+     function fontSize(){
+          document.body.style.fontSize = '50px';
+}    
+var btn1 = document.getElementById('btn-cocor');
+btn1.addEventListener('click', bgColor);
+btn1.addEventListener('click', fontColor);
+btn1.addEventListener('click', fontSize);
+    // btn1.onclick = bgColor;
+    
+</script>
+</html>
